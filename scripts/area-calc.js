@@ -21,3 +21,16 @@ function rectangleArea(){
     setvalue("rect-result",result);
 
 }
+
+function paraArea(){
+    // get base 
+    const paraBase = getInputValue("paraB");
+    // get height 
+    const paraHeight = getInputValue("paraH");
+    
+    // area 
+    const result  = paraBase * paraHeight;
+
+    // set 
+    setvalue("para-result",result);
+}
