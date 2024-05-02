@@ -33,7 +33,7 @@
                         <button onclick="triangleArea()" class="btn btn-primary w-full text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
+                </div>
                 <!-- second card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
@@ -52,7 +52,7 @@
                         <button onclick="rectangleArea()" class="btn btn-primary w-full text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
+                </div>
                 <!-- third card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
@@ -71,7 +71,64 @@
                         <button onclick="paraArea()" class="btn btn-primary w-full text-white">Calculate</button>
                       </div>
                     </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                      <p>
+                        <input id="rhomD1" type="text" class=" bg-gray-200 text-xl w-24 px-2" placeholder="d1">
+                        <span class="ml-2">cm</span>
+                        <input id="rhomD2" type="text" class=" bg-gray-200
+                        ml-6 text-xl w-24 px-2" placeholder="d2">
+                        <span class="ml-2">cm</span>
+                      </p>
+                      <p class="text-2xl">Area: <span id="rhom-result">0</span> cm<sup>2</sup></p>
+                      <div class="card-actions">
+                        <button onclick="rhomArea()" class="btn btn-primary w-full text-white">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- fifth card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) = 0.5 X p X b</p>
+                      <p>
+                        <input id="pentaP" type="text" class=" bg-gray-200 text-xl w-24 px-2" placeholder="p">
+                        <span class="ml-2">cm</span>
+                        <input id="pentaBase" type="text" class=" bg-gray-200
+                        ml-6 text-xl w-24 px-2" placeholder="base">
+                        <span class="ml-2">cm</span>
+                      </p>
+                      <p class="text-2xl">Area: <span id="penta-result">0</span> cm<sup>2</sup></p>
+                      <div class="card-actions">
+                        <button onclick="pentaArea()" class="btn btn-primary w-full text-white">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- sixth card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                  <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Ellipse</h2>
+                    <p>Area (A) = πab</p>
+                    <p>
+                      <input id="elliA" type="text" class=" bg-gray-200 text-xl w-24 px-2" placeholder="exis a">
+                      <span class="ml-2">cm</span>
+                      <input id="elliB" type="text" class=" bg-gray-200
+                      ml-6 text-xl w-24 px-2" placeholder="axis b">
+                      <span class="ml-2">cm</span>
+                    </p>
+                    <p class="text-2xl">Area: <span id="elli-result">0</span> cm<sup>2</sup></p>
+                    <div class="card-actions">
+                      <button onclick="elliArea()" class="btn btn-primary w-full text-white">Calculate</button>
+                    </div>
                   </div>
+              </div>
 
             </div>
             <!-- area  -->
