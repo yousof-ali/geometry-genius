@@ -9,7 +9,10 @@ function triangleArea(){
     if(validate){
         const result = 0.5 * basefield * heightField;
 
-        setvalue("tri-result",result);    
+        setvalue("tri-result",result);  
+        
+        
+        addElemnet("calc_result","p","Triangle",result)
     }
     else{
         alert("input will be number");
@@ -31,6 +34,8 @@ function rectangleArea(){
         const result = rectwidth * rectlength;
 
         setvalue("rect-result",result);
+
+        addElemnet("calc_result","p","Rectangle",result)
     }
     else{
         alert("input will be a number")
@@ -54,6 +59,8 @@ function paraArea(){
 
         // set 
         setvalue("para-result",result);
+
+        addElemnet("calc_result","p","Parallegram",result)
     }
     else{
         alert("input will be number");
@@ -73,7 +80,9 @@ function rhomArea(){
     if(validate){
         const result = 0.5 * rhomD1 * rhomD2;
 
-    setvalue("rhom-result",result);
+        setvalue("rhom-result",result);
+
+        addElemnet("calc_result","p","Rhombus",result)
     }
     else{
         alert("input will be a number");
@@ -93,6 +102,8 @@ function pentaArea(){
         const result = 0.5 * pentaP * pentaBase;
 
         setvalue("penta-result",result);
+
+        addElemnet("calc_result","p","Pentagon",result)
     }
     else{
         alert("input will be a number")
@@ -113,6 +124,7 @@ function elliArea(){
         const resultTwo = result.toFixed(2);
 
         setvalue("elli-result",resultTwo);
+        addElemnet("calc_result","p","Ellipse",result)
     }
     else{
         alert("input will be a number");
@@ -120,5 +132,10 @@ function elliArea(){
         setDefaultInput("elliA","elliB");
     }
 
-    
+  
 }
+// clear
+document.getElementById("clearAll").addEventListener("click",function(){
+    const allvalue = document.getElementsByClassName("clearall");
+    allvalue.innerHTML = " ";
+})

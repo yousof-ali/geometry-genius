@@ -33,3 +33,15 @@ function setDefaultInput(elementId1, elementId2){
     const elements2 = document.getElementById(elementId2);
     elements2.value = '';
 }
+
+
+function addElemnet(elementId, elementname,header,value){
+    const value1 = document.getElementById(elementId);
+    const count = value1.childElementCount;
+    const value2 = document.createElement(elementname);
+    value2.innerHTML = `
+    ${count + 1}. ${header} ${value} cm<sup>2</sup>
+    `;
+    
+    value1.appendChild(value2);
+}
