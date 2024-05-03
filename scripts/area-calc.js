@@ -135,7 +135,7 @@ function elliArea(){
   
 }
 // clear
-document.getElementById("clearAll").addEventListener("click",function(){
-    const allvalue = document.getElementsByClassName("clearall");
-    allvalue.innerHTML = " ";
+document.getElementById("clear").addEventListener("click",function(){
+    const values = document.getElementById("calc_result");
+    values.innerText = '';
 })
